@@ -1,7 +1,7 @@
 # Wallet Migration
 I work in ethereum exchange and mobile wallet development, if you are like me you might have multiple software wallets with various assets in them for use or testing.  Perhaps you have mutliple assets spread across multiple wallets, maybe some of the wallets don't have `eth` to transfer the assets out, it is too time consuming to figure out the `eth` needs of each account, send each asset and them empty the `eth`.  Or maybe you are just concerned that your seed phrase has been compromised and you want to drain your account quickly to a _safe_ account.
 
-This application allows to you take multiple wallets and consolidate them into one destination.  It determines if each account has enough `eth` to transfer the assets and sends `eth` from other accounts if necessary to cover the gas costs.  Then sends all tokens from all accounts to the destination and finally empties any `eth` left behind.
+This application allows to you take multiple wallets and consolidate them into one destination.  It takes seed phrases and private keys then queries the node to find any token transaction those accounts have had to determine which accounts have balances to transfer.  It determines if each account has enough `eth` to transfer the assets and sends `eth` from other accounts if necessary to cover the gas costs.  Then sends all tokens from all accounts to the destination and finally empties any `eth` left behind.
 
 Obviously it is not a good idea to input your private keys or seed phrases in to the computer but if you are immediately condolidating them to a _safe_ destination then the risks are limited.  Whatever the reason for using the application you should _**never use the seed phrases/private keys again!**_
 
